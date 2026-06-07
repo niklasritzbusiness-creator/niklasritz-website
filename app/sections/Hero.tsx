@@ -44,8 +44,8 @@ export default function Hero() {
           </FadeIn>
 
           <FadeIn direction="right">
-            <p className="text-neutral-300 text-lg max-w-sm leading-relaxed">
-              “Ich entwickle Websites, die nicht nur gut aussehen, sondern echte Ergebnisse bringen.”
+            <p className="text-neutral-300 text-lg leading-relaxed max-w-xs md:max-w-sm text-left italic">
+              “Ich glaube, dass jedes Unternehmen eine moderne Website verdient, die Vertrauen schafft und Kunden überzeugt.”
             </p>
           </FadeIn>
 

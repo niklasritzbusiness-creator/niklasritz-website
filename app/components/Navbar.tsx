@@ -25,9 +25,14 @@ export default function Navbar() {
       <header className="fixed top-0 left-0 w-full bg-neutral-950/70 backdrop-blur-md border-b border-neutral-800 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           {/* Logo */}
-          <div className="font-semibold text-lg tracking-tight">
+          
+          <a
+            href="#top"
+            className="font-semibold text-lg tracking-tight cursor-pointer"
+          >
             Niklas Ritz
-          </div>
+          </a>
+
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex gap-8 text-sm text-neutral-400">

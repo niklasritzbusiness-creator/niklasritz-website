@@ -9,7 +9,7 @@ import FadeIn from "./components/FadeIn"
 
 export default function Home() {
   return (
-    <main className="bg-neutral-950 text-white min-h-screen">
+    <main id="top" className="font-semibold text-lg tracking-tight cursor-pointer hover:text-neutral-300 transition">
       <Navbar />
       <Hero />
       <div className="h-px bg-neutral-800 max-w-5xl mx-auto"></div>

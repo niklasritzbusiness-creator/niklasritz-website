@@ -7,7 +7,7 @@ export default function Benefits() {
         </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         
-        <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 transition">
+        <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] transition">
           <h3 className="text-xl font-semibold mb-3">
             Modernes Design
           </h3>
@@ -16,7 +16,7 @@ export default function Benefits() {
           </p>
         </div>
 
-        <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 transition">
+        <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] transition">
           <h3 className="text-xl font-semibold mb-3">
             Mobile optimiert
           </h3>
@@ -25,7 +25,7 @@ export default function Benefits() {
           </p>
         </div>
 
-        <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 transition">
+        <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] transition">
           <h3 className="text-xl font-semibold mb-3">
             Schnell & performant
           </h3>
@@ -34,7 +34,7 @@ export default function Benefits() {
           </p>
         </div>
 
-        <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 transition">
+        <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] transition">
           <h3 className="text-xl font-semibold mb-3">
             Einfache Abläufe
           </h3>

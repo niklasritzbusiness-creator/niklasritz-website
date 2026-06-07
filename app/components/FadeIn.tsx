@@ -24,10 +24,10 @@ export default function FadeIn({
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: initialX, y: initialY }}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
+      whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
+      initial={{ opacity: 0, x: initialX, y: initialY, scale: 0.95 }}
       transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
+      viewport={{ once: false, margin: "-100px" }}
     >
       {children}
     </motion.div>

@@ -6,6 +6,7 @@ export default function Hero() {
 
         <div className="absolute inset-0 -z-10 flex justify-center">
         <div className="w-[500px] h-[500px] bg-white/5 blur-[120px] rounded-full"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
         </div>
 
       <FadeIn>

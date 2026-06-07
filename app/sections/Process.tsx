@@ -10,7 +10,7 @@ export default function Process() {
         So läuft die Zusammenarbeit ab
       </h2>
       <div className="h-px bg-neutral-800 mb-12 max-w-3xl mx-auto"></div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-2 gap-8">
 
         {/* Step 1 */}
         <FadeIn direction="left">

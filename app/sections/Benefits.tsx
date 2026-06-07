@@ -1,7 +1,7 @@
 export default function Benefits() {
   return (
     
-    <section className="py-32 px-6 max-w-6xl mx-auto">
+    <section id="leistungen" className="py-32 px-6 max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center">
         Warum eine professionelle Website wichtig ist
         </h2>

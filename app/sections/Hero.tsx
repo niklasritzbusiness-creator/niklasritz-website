@@ -25,6 +25,14 @@ export default function Hero() {
           Kostenloses Erstgespräch
         </button>
       </FadeIn>
+      <div className="mt-12 flex justify-center">
+  <img
+      src="/images/your-photo.jpg"
+      alt="Niklas Ritz"
+      className="w-36 h-36 rounded-full object-cover border border-neutral-700 shadow-lg"
+    />
+  </div>
+
     </section>
   )
 }

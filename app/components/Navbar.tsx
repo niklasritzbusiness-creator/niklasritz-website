@@ -8,10 +8,18 @@ export default function Navbar() {
         </div>
 
         <nav className="hidden md:flex gap-8 text-sm text-neutral-400">
-          <a href="#leistungen" className="hover:text-white transition">Leistungen</a>
-          <a href="#ablauf" className="hover:text-white transition">Ablauf</a>
-          <a href="#angebot" className="hover:text-white transition">Angebot</a>
-          <a href="#kontakt" className="hover:text-white transition">Kontakt</a>
+          <a href="#leistungen" className="hover:text-white transition">
+            Leistungen
+          </a>
+          <a href="#ablauf" className="hover:text-white transition">
+            Ablauf
+          </a>
+          <a href="#angebot" className="hover:text-white transition">
+            Angebot
+          </a>
+          <a href="#kontakt" className="hover:text-white transition">
+            Kontakt
+          </a>
         </nav>
 
       </div>

@@ -1,3 +1,5 @@
+import FadeIn from "../components/FadeIn"
+
 export default function Process() {
   return (
     <section id="ablauf" className="py-32 px-6 max-w-5xl mx-auto text-center">
@@ -9,6 +11,8 @@ export default function Process() {
 
       <div className="grid md:grid-cols-2 gap-10 text-left">
         
+        <FadeIn direction="left">
+          <div style={{ transitionDelay: "0.2s" }}></div>
         <div>
           <span className="text-neutral-500 text-sm">01</span>
           <h3 className="text-xl font-semibold mt-2 mb-2">
@@ -19,7 +23,10 @@ export default function Process() {
             Gemeinsam klären wir deine Ziele und Anforderungen.
           </p>
         </div>
+        </FadeIn>
 
+        <FadeIn direction="right">
+          <div style={{ transitionDelay: "0.2s" }}></div>
         <div>
           <span className="text-neutral-500 text-sm">02</span>
           <h3 className="text-xl font-semibold mt-2 mb-2">
@@ -30,7 +37,10 @@ export default function Process() {
             abgestimmt auf deine Zielgruppe.
           </p>
         </div>
+        </FadeIn>
 
+        <FadeIn direction="left">
+          <div style={{ transitionDelay: "0.2s" }}></div>
         <div>
           <span className="text-neutral-500 text-sm">03</span>
           <h3 className="text-xl font-semibold mt-2 mb-2">
@@ -41,7 +51,10 @@ export default function Process() {
             inklusive Mobile-Optimierung und schnellen Ladezeiten.
           </p>
         </div>
+        </FadeIn>
 
+        <FadeIn direction="right">
+          <div style={{ transitionDelay: "0.2s" }}></div>
         <div>
           <span className="text-neutral-500 text-sm">04</span>
           <h3 className="text-xl font-semibold mt-2 mb-2">
@@ -51,6 +64,8 @@ export default function Process() {
             Deine Website geht online und ist bereit, neue Kunden zu gewinnen.
           </p>
         </div>
+        
+        </FadeIn>
 
       </div>
     </section>

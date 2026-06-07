@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import FadeIn from "./components/FadeIn"
 import Logos from "./sections/Logos"
+import Projects from "./sections/Project"
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <div className="h-px bg-neutral-800 max-w-5xl mx-auto"></div>
-      <Logos />
+      <Projects />
       <div className="h-px bg-neutral-800 max-w-5xl mx-auto"></div>
       <Benefits />
       <div className="h-px bg-neutral-800 max-w-5xl mx-auto"></div>

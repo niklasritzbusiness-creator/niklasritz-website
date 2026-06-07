@@ -56,17 +56,14 @@ export default function Projects() {
             {/* ✅ DESKTOP: Screenshot on right */}
             
             <div className="hidden md:flex justify-center items-center">
-            <div className="w-full max-w-[320px]">
-                <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-2">
+            <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-2 max-w-[340px]">
                 <img
                 src="/projects/screenshot_die_tauchwelt.de.png"
                 alt="Website Vorschau"
-                className="w-full rounded-xl border border-neutral-800 shadow-lg hover:scale-[1.02] transition duration-300"
+                className="w-full rounded-lg object-cover"
                 />
-                </div>
             </div>
             </div>
-
 
             </div>
 

@@ -6,12 +6,15 @@ import Contact from "./sections/Contact"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import FadeIn from "./components/FadeIn"
+import Logos from "./sections/Logos"
 
 export default function Home() {
   return (
     <main id="top" className="font-semibold text-lg tracking-tight cursor-pointer hover:text-neutral-300 transition">
       <Navbar />
       <Hero />
+      <div className="h-px bg-neutral-800 max-w-5xl mx-auto"></div>
+      <Logos />
       <div className="h-px bg-neutral-800 max-w-5xl mx-auto"></div>
       <Benefits />
       <div className="h-px bg-neutral-800 max-w-5xl mx-auto"></div>

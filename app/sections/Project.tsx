@@ -16,23 +16,44 @@ export default function Projects() {
       {/* ✅ REAL CLIENT */}
       <FadeIn>
         <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 mb-12 hover:border-neutral-600 transition">
-          <p className="text-neutral-500 text-sm mb-2">Kundenprojekt</p>
 
-          <h3 className="text-2xl font-semibold mb-4">
-            Website für [DEIN CLIENT NAME]
-          </h3>
+            {/* ✅ MOBILE: Logo on top */}
+            <div className="h-16 object-contain opacity-80 hover:opacity-100 transition">
+                <img src="/logos/dietauchwelt.png" alt="Client Logo" className="h-10" />
+            </div>
 
-          <p className="text-neutral-400 mb-6 max-w-xl">
-            Für dieses Unternehmen habe ich eine moderne, schnelle Website entwickelt, 
-            die Vertrauen schafft und neue Kunden anspricht. 
-            Fokus lag auf Design, Performance und mobiler Optimierung.
-          </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
 
-          <button className="text-white text-sm underline hover:text-neutral-300 transition">
-            Website ansehen
-          </button>
+            {/* ✅ LEFT: TEXT */}
+            <div>
+                <p className="text-neutral-500 text-sm mb-2">Kundenprojekt</p>
+
+                <h3 className="text-2xl font-semibold mb-4">
+                Website für Die Tauchwelt - Tauchschule in Eggenstein
+                </h3>
+
+                <p className="text-neutral-400 mb-6 max-w-xl">
+                Für die Tauchschule habe ich eine moderne, schnelle Website entwickelt, welche
+                Vertrauen schafft, klar strukturiert ist und neue Kunden anspricht. 
+                Fokus lag auf Design, Performance und mobiler Optimierung.
+                </p>
+
+                <button className="text-white text-sm underline hover:text-neutral-300 transition">
+                <a href="https://www.die-tauchwelt.de" target="_blank" rel="noopener noreferrer">
+                    Website ansehen
+                </a>
+                </button>
+            </div>
+
+            {/* ✅ DESKTOP: Logo on right */}
+            <div className="h-16 object-contain opacity-80 hover:opacity-100 transition">
+                <img src="/logos/dietauchwelt.png" alt="Client Logo" className="h-10" />
+            </div>
+
+            </div>
+
         </div>
-      </FadeIn>
+        </FadeIn>
 
       {/* ✅ EXAMPLE PROJECTS */}
       <div className="grid md:grid-cols-3 gap-8">

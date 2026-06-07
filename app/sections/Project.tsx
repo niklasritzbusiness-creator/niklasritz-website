@@ -53,7 +53,7 @@ export default function Projects() {
 
             {/* ✅ DESKTOP: Logo on right */}
             
-            <div className="hidden md:flex justify-end items-center">
+            <div className="hidden md:flex justify-center items-center">
                 <img 
                 src="/logos/dietauchwelt.png"
                 alt="Die Tauchwelt Logo"

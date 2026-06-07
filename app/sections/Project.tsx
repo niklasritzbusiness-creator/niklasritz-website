@@ -22,7 +22,7 @@ export default function Projects() {
             <div className="flex justify-start mb-6 md:hidden">
             <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-2">
             <img
-                src="/projects/screenshot_die_tauchwelt.de.png"
+                src="/projects/screenshot_die-tauchwelt.de.png"
                 alt="Website Vorschau"
                 className="w-full max-w-[260px] rounded-xl border border-neutral-800 shadow-lg"
             />
@@ -58,7 +58,7 @@ export default function Projects() {
             <div className="hidden md:flex justify-center items-center">
             <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-2 max-w-[340px]">
                 <img
-                src="/projects/screenshot_die_tauchwelt.de.png"
+                src="/projects/screenshot_die-tauchwelt.de.png"
                 alt="Website Vorschau"
                 className="w-full rounded-lg object-cover"
                 />

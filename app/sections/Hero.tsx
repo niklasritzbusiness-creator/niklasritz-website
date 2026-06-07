@@ -2,38 +2,56 @@ import FadeIn from "../components/FadeIn"
 
 export default function Hero() {
   return (
-    <section className="relative text-center py-32 px-6">
-
-        <div className="absolute inset-0 -z-10 flex justify-center">
+    <section className="relative py-40 px-6 max-w-6xl mx-auto">
+      
+      {/* Glow Background */}
+      <div className="absolute inset-0 -z-10 flex justify-center">
         <div className="w-[500px] h-[500px] bg-white/5 blur-[120px] rounded-full"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black pointer-events-none"></div>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+
+        {/* LEFT: TEXT */}
+        <div>
+          <FadeIn>
+            <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.1] mb-6">
+              Moderne Webseiten für Unternehmen
+            </h1>
+          </FadeIn>
+
+          <FadeIn>
+            <p className="text-lg text-neutral-400 mb-8 max-w-xl">
+              Ich helfe lokalen Unternehmen in Karlsruhe, professionell online aufzutreten und neue Kunden zu gewinnen.
+            </p>
+          </FadeIn>
+
+          <FadeIn>
+            <button className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-neutral-200 transition shadow-lg shadow-white/5">
+              Kostenloses Erstgespräch
+            </button>
+          </FadeIn>
         </div>
 
-      <FadeIn>
-        <h1 className="text-5xl md:text-7xl font-semibold mb-6 tracking-tight">
-          Moderne Webseiten für lokale Unternehmen
-        </h1>
-      </FadeIn>
+        {/* RIGHT: IMAGE + QUOTE */}
+        <div className="flex flex-col items-center md:items-end text-center md:text-right gap-6">
 
-      <FadeIn>
-        <p className="text-lg text-neutral-400 max-w-xl mx-auto mb-8">
-          Ich erstelle schnelle, elegante Websites für kleine Unternehmen in Karlsruhe und Umgebung.
-        </p>
-      </FadeIn>
+          <FadeIn direction="right">
+            <img
+              src="/images/niklas.jpg"
+              alt="Niklas Ritz"
+              className="w-[220px] h-[220px] object-cover rounded-2xl border border-neutral-800 shadow-lg hover:scale-105 transition duration-300"
+            />
+          </FadeIn>
 
-      <FadeIn>
-        <button className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-neutral-200 transition shadow-lg shadow-white/5">
-          Kostenloses Erstgespräch
-        </button>
-      </FadeIn>
-      <div className="mt-12 flex justify-center">
-  <img
-      src="/images/your-photo.jpg"
-      alt="Niklas Ritz"
-      className="w-36 h-36 rounded-full object-cover border border-neutral-700 shadow-lg"
-    />
-  </div>
+          <FadeIn direction="right">
+            <p className="text-neutral-300 text-lg max-w-sm leading-relaxed">
+              “Ich entwickle Websites, die nicht nur gut aussehen, sondern echte Ergebnisse bringen.”
+            </p>
+          </FadeIn>
 
+        </div>
+
+      </div>
     </section>
   )
 }

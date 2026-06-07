@@ -17,14 +17,16 @@ export default function Projects() {
       <FadeIn>
         <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 mb-12 hover:border-neutral-600 transition">
 
-            {/* ✅ MOBILE: Logo on top */}
+            {/* ✅ MOBILE: Screenshot on top */}
             
             <div className="flex justify-start mb-6 md:hidden">
-            <img 
-                src="/logos/dietauchwelt.png"
-                alt="Die Tauchwelt Logo"
-                className="h-14 object-contain opacity-80"
+            <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-2">
+            <img
+                src="/projects/screenshot_die_tauchwelt.de.png"
+                alt="Website Vorschau"
+                className="w-full max-w-[260px] rounded-xl border border-neutral-800 shadow-lg"
             />
+            </div>
             </div>
 
 
@@ -51,14 +53,18 @@ export default function Projects() {
                 </button>
             </div>
 
-            {/* ✅ DESKTOP: Logo on right */}
+            {/* ✅ DESKTOP: Screenshot on right */}
             
             <div className="hidden md:flex justify-center items-center">
-                <img 
-                src="/logos/dietauchwelt.png"
-                alt="Die Tauchwelt Logo"
-                className="h-20 object-contain opacity-80 hover:opacity-100 transition"
+            <div className="w-full max-w-[320px]">
+                <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-2">
+                <img
+                src="/projects/screenshot_die_tauchwelt.de.png"
+                alt="Website Vorschau"
+                className="w-full rounded-xl border border-neutral-800 shadow-lg hover:scale-[1.02] transition duration-300"
                 />
+                </div>
+            </div>
             </div>
 
 

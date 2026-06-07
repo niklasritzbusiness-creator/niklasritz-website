@@ -30,9 +30,13 @@ export default function Offer() {
               <li>• Grundlegende SEO</li>
             </ul>
 
-            <button className="w-full bg-white text-black py-2 rounded-lg hover:bg-neutral-200 transition">
-              Starten
-            </button>
+            <a
+              href={`mailto:kontakt@niklasritz.de?subject=Anfrage%20Starter%20Landingpage&body=Hallo%20Niklas,%0A%0Aich%20interessiere%20mich%20für%20das%20Starter%20Landingpage-Paket.%0A%0A---%0A%0AInfos%20zu%20meinem%20Projekt:%0ABranche:%20%0AZiel:%20%0AGibt%20es%20bereits%20eine%20Website?%20%0A%0A---%0A%0AViele%20Grüße`}
+            >
+              <button className="w-full bg-white text-black py-2 rounded-lg hover:bg-neutral-200 transition">
+                Starten
+              </button>
+            </a>
           </div>
         </FadeIn>
 
@@ -52,9 +56,13 @@ export default function Offer() {
               <li>• Schnelle Ladezeiten</li>
             </ul>
 
-            <button className="w-full bg-white text-black py-2 rounded-lg hover:bg-neutral-200 transition">
-              Jetzt starten
-            </button>
+            <a
+              href={`mailto:kontakt@niklasritz.de?subject=Anfrage%20Business%20Website&body=Hallo%20Niklas,%0A%0Aich%20interessiere%20mich%20für%20die%20Business%20Website%20(inkl.%20Unterseiten).%0A%0A---%0A%0AInfos%20zu%20meinem%20Projekt:%0ABranche:%20%0AZiel:%20%0AGibt%20es%20bereits%20eine%20Website?%20%0A%0AWie%20viele%20Unterseiten%20werden%20benötigt?%20%0A%0A---%0A%0AViele%20Grüße`}
+            >
+              <button className="w-full bg-white text-black py-2 rounded-lg hover:bg-neutral-200 transition">
+                Jetzt starten
+              </button>
+            </a>
           </div>
         </FadeIn>
 
@@ -74,9 +82,13 @@ export default function Offer() {
               <li>• Individuelle Features</li>
             </ul>
 
-            <button className="w-full bg-white text-black py-2 rounded-lg hover:bg-neutral-200 transition">
-              Anfrage senden
-            </button>
+            <a
+              href={`mailto:kontakt@niklasritz.de?subject=Anfrage%20Online%20Shop&body=Hallo%20Niklas,%0A%0Aich%20interessiere%20mich%20für%20einen%20Online%20Shop.%0A%0A---%0A%0AInfos%20zu%20meinem%20Projekt:%0AWas%20wird%20verkauft?%20%0AAnzahl%20der%20Produkte:%20%0ABenötigte%20Funktionen:%20%0AZiel:%20%0A%0A---%0A%0AViele%20Grüße`}
+            >
+              <button className="w-full bg-white text-black py-2 rounded-lg hover:bg-neutral-200 transition">
+                Anfrage senden
+              </button>
+            </a>
           </div>
         </FadeIn>
 
@@ -96,9 +108,13 @@ export default function Offer() {
               <li>• Laufende Betreuung</li>
             </ul>
 
-            <button className="w-full bg-white text-black py-2 rounded-lg hover:bg-neutral-200 transition">
-              Mehr erfahren
-            </button>
+            <a
+              href={`mailto:kontakt@niklasritz.de?subject=Anfrage%20Wartung&body=Hallo%20Niklas,%0A%0Aich%20interessiere%20mich%20für%20die%20laufende%20Wartung%20meiner%20Website.%0A%0A---%0A%0AInfos:%0AWie%20heißt%20Ihre%20aktuelle%20Website?%20%0AWelche%20Änderungen%20werden%20regelmäßig%20benötigt?%20%0A%0A---%0A%0AViele%20Grüße`}
+            >
+              <button className="w-full bg-white text-black py-2 rounded-lg hover:bg-neutral-200 transition">
+                Mehr erfahren
+              </button>
+            </a>
           </div>
         </FadeIn>
 

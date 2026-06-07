@@ -18,10 +18,10 @@ export default function Contact() {
         <div>
           <p className="text-neutral-500 text-sm mb-1">E-Mail</p>
           <a 
-            href="mailto:niklasritzbusiness@gmail.com"
+            href="mailto:info@niklasritz.de"
             className="text-white text-lg hover:underline"
           >
-            niklasritzbusiness@gmail.com
+            info@niklasritz.de
           </a>
         </div>
 

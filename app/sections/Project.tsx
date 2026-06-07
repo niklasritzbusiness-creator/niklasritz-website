@@ -18,9 +18,15 @@ export default function Projects() {
         <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 mb-12 hover:border-neutral-600 transition">
 
             {/* ✅ MOBILE: Logo on top */}
-            <div className="h-16 object-contain opacity-80 hover:opacity-100 transition">
-                <img src="/logos/dietauchwelt.png" alt="Client Logo" className="h-10" />
+            
+            <div className="flex justify-start mb-6 md:hidden">
+            <img 
+                src="/logos/dietauchwelt.png"
+                alt="Die Tauchwelt Logo"
+                className="h-14 object-contain opacity-80"
+            />
             </div>
+
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
 
@@ -46,9 +52,15 @@ export default function Projects() {
             </div>
 
             {/* ✅ DESKTOP: Logo on right */}
-            <div className="h-16 object-contain opacity-80 hover:opacity-100 transition">
-                <img src="/logos/dietauchwelt.png" alt="Client Logo" className="h-10" />
+            
+            <div className="hidden md:flex justify-end items-center">
+                <img 
+                src="/logos/dietauchwelt.png"
+                alt="Die Tauchwelt Logo"
+                className="h-20 object-contain opacity-80 hover:opacity-100 transition"
+                />
             </div>
+
 
             </div>
 

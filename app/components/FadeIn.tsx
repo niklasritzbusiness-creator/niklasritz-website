@@ -10,15 +10,15 @@ export default function FadeIn({
   direction?: "up" | "left" | "right"
 }) {
   let initialX = 0
-  let initialY = 20
+  let initialY = 16
 
   if (direction === "left") {
-    initialX = -30
+    initialX = -20
     initialY = 0
   }
 
   if (direction === "right") {
-    initialX = 30
+    initialX = 20
     initialY = 0
   }
 
@@ -26,11 +26,8 @@ export default function FadeIn({
     <motion.div
       initial={{ opacity: 0, x: initialX, y: initialY }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      viewport={{
-        once: false,
-        margin: "-110px"
-      }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      viewport={{ once: false, margin: "-110px" }}
     >
       {children}
     </motion.div>

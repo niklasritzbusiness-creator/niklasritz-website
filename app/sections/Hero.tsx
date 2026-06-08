@@ -11,9 +11,14 @@ export default function Hero() {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT: TEXT */}
         <div>
-          <h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.1] mb-6">
+          
+          <h1
+            style={{ fontSize: "48px", lineHeight: "1.1" }}
+            className="text-5xl md:text-7xl font-semibold tracking-tight mb-6"
+          >
             Moderne Webseiten für Unternehmen
           </h1>
+
 
           <p className="text-lg text-neutral-400 mb-8 max-w-xl">
             Ich helfe lokalen Unternehmen in Karlsruhe, professionell online

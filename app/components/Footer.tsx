@@ -6,8 +6,8 @@ export default function Footer() {
         <p>© {new Date().getFullYear()} Niklas Ritz</p>
 
         <div className="flex justify-center gap-6">
-          <a href="#" className="hover:text-white transition">Impressum</a>
-          <a href="#" className="hover:text-white transition">Datenschutz</a>
+          <a href="impressum" className="hover:text-white transition">Impressum</a>
+          <a href="datenschutz" className="hover:text-white transition">Datenschutz</a>
         </div>
 
       </div>

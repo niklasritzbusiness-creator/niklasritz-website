@@ -29,7 +29,7 @@ export default function FadeIn({
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{
         once: false,
-        margin: "-120px"
+        margin: "-110px"
       }}
     >
       {children}

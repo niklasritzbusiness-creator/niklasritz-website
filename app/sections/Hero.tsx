@@ -37,6 +37,7 @@ export default function Hero() {
               width={320}
               height={320}
               priority
+              fetchPriority="high"
               className="rounded-2xl border border-neutral-800 object-cover w-full h-auto"
             />
           </div>

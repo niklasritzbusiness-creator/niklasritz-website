@@ -6,12 +6,12 @@ export default function Hero() {
       {/* Background image */}
       <Image
         src="/images/niklas-bw.webp"
-        alt="Niklas Ritz Webdesign"
+        alt="Niklas Ritz"
         fill
         priority
         fetchPriority="high"
         sizes="100vw"
-        className="object-cover object-[70%_center] grayscale"
+        className="object-cover object-[52%_35%] grayscale md:object-[70%_center]"
       />
 
       {/* Dark overlay for readability */}

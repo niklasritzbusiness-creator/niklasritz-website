@@ -36,7 +36,7 @@ export default function MaisonNoirDemo() {
           <div className="maison-hero-image absolute inset-0">
             <Image
               src="/demo/maison-noir-table.webp"
-              alt="Fein gedeckter Tisch mit einer hochwertigen Speise"
+              alt="Fein gedeckter Tisch im Restaurant"
               fill
               priority
               fetchPriority="high"
@@ -84,14 +84,14 @@ export default function MaisonNoirDemo() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#reservation"
-                className="rounded-full bg-[#c9a46a] px-7 py-3 text-sm font-medium text-black transition hover:bg-[#d8b77d]"
+                className="rounded-full bg-white px-7 py-3 text-sm font-medium text-[#080706] transition hover:bg-white/85"
               >
                 Tisch reservieren
               </a>
 
               <a
                 href="#menu"
-                className="rounded-full border border-white/20 px-7 py-3 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/10"
+                className="rounded-full border border-white/20 px-7 py-3 text-sm font-medium text-white transition hover:border-white/50 hover:bg-white/10"
               >
                 Menü entdecken
               </a>
@@ -119,7 +119,7 @@ export default function MaisonNoirDemo() {
         </div>
       </section>
 
-      {/* Lower preview strip for screenshot depth */}
+      {/* Lower preview strip */}
       <section
         id="menu"
         className="relative z-10 mx-auto grid max-w-7xl gap-6 px-6 py-24 md:grid-cols-3"
@@ -145,11 +145,42 @@ export default function MaisonNoirDemo() {
             <h2 className="text-2xl font-semibold tracking-tight">
               {item.title}
             </h2>
-            <p className="mt-4 leading-relaxed text-white/50">{item.text}</p>
+
+            <p className="mt-4 leading-relaxed text-white/50">
+              {item.text}
+            </p>
           </div>
         ))}
       </section>
 
+      {/* Experience section */}
+      <section
+        id="experience"
+        className="mx-auto max-w-7xl px-6 pb-24"
+      >
+        <div className="grid gap-6 md:grid-cols-[0.9fr_1.1fr] md:items-center">
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 backdrop-blur-md md:p-10">
+            <p className="mb-5 text-sm uppercase tracking-[0.25em] text-[#c9a46a]">
+              Erlebnis
+            </p>
+
+            <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
+              Eine Website, die Atmosphäre spürbar macht.
+            </h2>
+          </div>
+
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 backdrop-blur-md md:p-10">
+            <p className="leading-relaxed text-white/55">
+              Dieses Konzept zeigt, wie ein Restaurant nicht nur Informationen
+              präsentiert, sondern ein Gefühl erzeugt. Besucher sollen schon
+              beim ersten Blick verstehen, wofür der Ort steht: Ruhe, Qualität
+              und ein besonderer Abend.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Reservation section */}
       <section
         id="reservation"
         className="mx-auto max-w-7xl px-6 pb-28"
@@ -167,6 +198,13 @@ export default function MaisonNoirDemo() {
             Dieses Konzept zeigt, wie eine Restaurant-Website Atmosphäre,
             Vertrauen und Handlung elegant verbinden kann.
           </p>
+
+          <a
+            href="mailto:kontakt@niklasritz.de?subject=Anfrage%20Maison%20Noir%20Konzept"
+            className="mt-8 inline-flex rounded-full bg-white px-7 py-3 text-sm font-medium text-[#080706] transition hover:bg-white/85"
+          >
+            Ähnliches Projekt anfragen
+          </a>
         </div>
       </section>
     </main>

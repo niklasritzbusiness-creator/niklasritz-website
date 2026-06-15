@@ -35,12 +35,13 @@ export default function MaisonNoirDemo() {
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="maison-hero-image absolute inset-0">
             <Image
-              src="/demo/maison-noir-table.webp"
-              alt="Fein gedeckter Tisch im Maison Noir Restaurant"
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover object-center"
+            src="/demo/maison-noir-table.webp"
+            alt="Gedeckter Tisch im Maison Noir Restaurant"
+            fill
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+            className="object-cover object-[78%_center] md:object-center"
             />
           </div>
 

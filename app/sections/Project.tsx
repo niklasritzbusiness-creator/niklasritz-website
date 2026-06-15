@@ -1,118 +1,176 @@
 import Image from "next/image"
 import FadeIn from "../components/FadeIn"
 
+const exampleProjects = [
+  {
+    title: "Restaurant Website",
+    text: "Ein modernes Konzept für Restaurants, das Atmosphäre, Speisekarte und Reservierung klar in den Vordergrund stellt.",
+  },
+  {
+    title: "Fitness Studio Landingpage",
+    text: "Eine starke Landingpage mit klarem Fokus auf Probetraining, Vertrauen und schnelle Kontaktaufnahme.",
+  },
+  {
+    title: "Handwerksbetrieb Website",
+    text: "Eine seriöse Website, die Leistungen verständlich zeigt und Kunden direkt zur Anfrage führt.",
+  },
+]
+
 export default function Projects() {
   return (
-    <section className="py-32 px-6 max-w-6xl mx-auto">
-
-      <div className="h-px bg-neutral-800 mb-20"></div>
-
-      {/* Title */}
-      <FadeIn>
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16">
-          Projekte & Referenzen
-        </h2>
-      </FadeIn>
-
-      {/* REAL CLIENT */}
-      <FadeIn>
-        <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 mb-12 hover:border-neutral-600 transition">
-
-          {/* ✅ MOBILE */}
-          <div className="flex justify-center mb-6 md:hidden">
-            <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-2">
-              <Image
-                src="/projects/screenshot_die-tauchwelt.de.webp"
-                alt="Website Vorschau"
-                width={300}
-                height={200}
-                className="rounded-lg object-cover"
-                sizes="100vw"
-              />
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-
-            {/* TEXT */}
-            <div>
-              <p className="text-neutral-500 text-sm mb-2">Kundenprojekt</p>
-
-              <h3 className="text-2xl font-semibold mb-4">
-                Website für Die Tauchwelt - Tauchschule in Eggenstein
-              </h3>
-
-              <p className="text-neutral-400 mb-6 max-w-xl">
-                Für die Tauchschule habe ich eine moderne, schnelle Website entwickelt, welche
-                Vertrauen schafft, klar strukturiert ist und neue Kunden anspricht.
-                Fokus lag auf Design, Performance und mobiler Optimierung.
-              </p>
-
-              <a
-                href="https://www.die-tauchwelt.de"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white text-sm underline hover:text-neutral-300 transition"
-              >
-                Website ansehen
-              </a>
-            </div>
-
-            {/* ✅ DESKTOP */}
-            <div className="hidden md:flex justify-center items-center">
-              <div className="bg-neutral-950 border border-neutral-800 rounded-xl p-2 max-w-[340px]">
-                <Image
-                  src="/projects/screenshot_die-tauchwelt.de.webp"
-                  alt="Website Vorschau"
-                  width={320}
-                  height={200}
-                  className="rounded-lg object-cover"
-                  sizes="340px"
-                />
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </FadeIn>
-
-      {/* EXAMPLE PROJECTS */}
-      <div className="grid md:grid-cols-3 gap-8">
-
-        <FadeIn direction="left">
-          <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 transition">
-            <h4 className="text-lg font-semibold mb-2">Restaurant Website</h4>
-            <p className="text-neutral-400 text-sm">
-              Modernes Designkonzept für ein lokales Restaurant mit Fokus auf mobile Nutzung.
-            </p>
-          </div>
-        </FadeIn>
-
-        <FadeIn direction="up">
-          <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 transition">
-            <h4 className="text-lg font-semibold mb-2">Fitness Studio Landingpage</h4>
-            <p className="text-neutral-400 text-sm">
-              Klare Struktur und starke Call-To-Actions zur Kundengewinnung.
-            </p>
-          </div>
-        </FadeIn>
-
-        <FadeIn direction="right">
-          <div className="bg-neutral-900 p-6 rounded-2xl border border-neutral-800 hover:border-neutral-600 hover:-translate-y-1 transition">
-            <h4 className="text-lg font-semibold mb-2">Handwerksbetrieb Website</h4>
-            <p className="text-neutral-400 text-sm">
-              Vertrauen durch klares Design und einfache Kontaktmöglichkeiten.
-            </p>
-          </div>
-        </FadeIn>
-
+    <section
+      id="projekte"
+      className="relative overflow-hidden bg-neutral-950 px-6 py-32 md:py-40"
+    >
+      {/* Cinematic background depth */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute left-1/2 top-32 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-white/5 blur-[160px]" />
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-neutral-950 to-transparent" />
       </div>
 
-      <p className="text-neutral-500 text-xs mt-6 text-center">
-        Beispielprojekte (auf Anfrage verfügbar)
-      </p>
+      <div className="mx-auto max-w-6xl">
+        {/* Intro */}
+        <FadeIn>
+          <div className="mx-auto mb-20 max-w-4xl text-center">
+            <p className="mb-5 text-sm uppercase tracking-[0.25em] text-neutral-500">
+              Projekte & Referenzen
+            </p>
 
+            <h2 className="text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
+              Websites, die nicht nur gut aussehen — sondern Wirkung zeigen.
+            </h2>
+
+            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-neutral-400">
+              Ein gutes Projekt beginnt nicht mit Design allein, sondern mit der
+              Frage: Wie soll sich ein Kunde fühlen, wenn er dein Unternehmen
+              online entdeckt?
+            </p>
+          </div>
+        </FadeIn>
+
+        {/* Featured case study */}
+        <FadeIn>
+          <article className="relative overflow-hidden rounded-[2rem] border border-neutral-800 bg-neutral-900 shadow-2xl shadow-black/40">
+            <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
+              {/* Text side */}
+              <div className="relative z-10 flex flex-col justify-between p-8 md:p-10 lg:p-12">
+                <div>
+                  <p className="mb-5 text-sm uppercase tracking-[0.25em] text-neutral-500">
+                    Kundenprojekt
+                  </p>
+
+                  <h3 className="text-3xl font-semibold leading-tight tracking-tight text-white md:text-5xl">
+                    Die Tauchwelt — Tauchschule in Eggenstein
+                  </h3>
+
+                  <p className="mt-7 max-w-xl text-lg leading-relaxed text-neutral-400">
+                    Für die Tauchschule entstand eine moderne, schnelle Website,
+                    die Vertrauen schafft, klar strukturiert ist und neue Kunden
+                    gezielt zur Kontaktaufnahme führt.
+                  </p>
+
+                  <div className="mt-10 grid gap-4 text-sm text-neutral-400 sm:grid-cols-3">
+                    <div className="rounded-2xl border border-neutral-800 bg-neutral-950/60 p-4">
+                      <p className="mb-2 text-neutral-500">Fokus</p>
+                      <p className="text-white">Vertrauen</p>
+                    </div>
+
+                    <div className="rounded-2xl border border-neutral-800 bg-neutral-950/60 p-4">
+                      <p className="mb-2 text-neutral-500">Optimiert</p>
+                      <p className="text-white">Mobil</p>
+                    </div>
+
+                    <div className="rounded-2xl border border-neutral-800 bg-neutral-950/60 p-4">
+                      <p className="mb-2 text-neutral-500">Ziel</p>
+                      <p className="text-white">Anfragen</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-10">
+                  <a
+                    href="https://www.die-tauchwelt.de"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
+                  >
+                    Website ansehen
+                  </a>
+                </div>
+              </div>
+
+              {/* Visual side */}
+              <div className="relative min-h-[360px] overflow-hidden border-t border-neutral-800 lg:min-h-[620px] lg:border-l lg:border-t-0">
+                <Image
+                  src="/projects/screenshot_die-tauchwelt.de.webp"
+                  alt="Website Vorschau Die Tauchwelt"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 55vw"
+                  className="object-cover object-top"
+                />
+
+                {/* cinematic overlays */}
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/50 via-transparent to-transparent lg:from-neutral-950/70" />
+
+                {/* floating label */}
+                <div className="absolute bottom-6 left-6 rounded-full border border-white/10 bg-black/40 px-4 py-2 text-sm text-white backdrop-blur-md">
+                  Live Projekt · Webdesign & Umsetzung
+                </div>
+              </div>
+            </div>
+          </article>
+        </FadeIn>
+
+        {/* Transition statement */}
+        <FadeIn>
+          <div className="mx-auto my-20 max-w-3xl text-center">
+            <h3 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
+              Jede Branche braucht eine andere Geschichte.
+            </h3>
+
+            <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-neutral-400">
+              Deshalb wirkt gutes Webdesign nicht wie eine Vorlage. Es passt zu
+              deinem Unternehmen, deiner Zielgruppe und dem Gefühl, das du
+              vermitteln möchtest.
+            </p>
+          </div>
+        </FadeIn>
+
+        {/* Example projects */}
+        <div className="grid gap-6 md:grid-cols-3">
+          {exampleProjects.map((project, index) => (
+            <FadeIn
+              key={project.title}
+              direction={
+                index === 0 ? "left" : index === 1 ? "up" : "right"
+              }
+            >
+              <div className="group min-h-[260px] rounded-[2rem] border border-neutral-800 bg-neutral-900 p-8 transition duration-300 hover:-translate-y-1 hover:border-neutral-600 hover:shadow-[0_0_35px_rgba(255,255,255,0.05)]">
+                <div className="mb-12 flex items-center justify-between">
+                  <span className="text-sm text-neutral-500">
+                    Beispiel 0{index + 1}
+                  </span>
+
+                  <span className="h-2 w-2 rounded-full bg-neutral-600 transition group-hover:bg-white" />
+                </div>
+
+                <h4 className="text-2xl font-semibold tracking-tight text-white">
+                  {project.title}
+                </h4>
+
+                <p className="mt-5 leading-relaxed text-neutral-400">
+                  {project.text}
+                </p>
+
+                <p className="mt-8 text-xs uppercase tracking-[0.2em] text-neutral-600">
+                  Auf Anfrage verfügbar
+                </p>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </div>
     </section>
   )
 }

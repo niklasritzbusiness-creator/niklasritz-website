@@ -41,7 +41,7 @@ export default function MaisonNoirDemo() {
             priority
             fetchPriority="high"
             sizes="100vw"
-            className="object-cover object-[78%_center] md:object-center"
+            className="object-cover object-[70%_center] md:object-center"
             />
           </div>
 

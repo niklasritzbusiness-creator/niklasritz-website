@@ -100,13 +100,15 @@ export default function Projects() {
               {/* Visual side */}
               <div className="relative flex items-center justify-center overflow-hidden border-t border-neutral-800 bg-neutral-950 p-4 lg:border-l lg:border-t-0 lg:p-6">
                 <div className="relative w-full overflow-hidden rounded-[1.5rem] border border-neutral-800 bg-neutral-950 aspect-[1800/1016]">
-                  <Image
-                    src="/projects/maison-noir-preview.webp"
-                    alt="Maison Noir Website Vorschau"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 55vw"
-                    className="object-contain object-center"
-                  />
+                 <Image
+                  src="/demo/maison-noir-table.webp"
+                  alt="Gedeckter Tisch im Maison Noir Restaurant"
+                  fill
+                  priority
+                  fetchPriority="high"
+                  sizes="100vw"
+                  className="object-cover object-[78%_center] md:object-center"
+                />
                 </div>
 
                 {/* Floating label */}

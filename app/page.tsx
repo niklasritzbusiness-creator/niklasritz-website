@@ -20,18 +20,18 @@ export default function Home() {
       {/* ✅ Above-the-fold (loads immediately) */}
       <Hero />
 
-      {/* ✅ Lazy sections (load after) */}
-      <div className="h-px bg-neutral-800 max-w-5xl mx-auto" />
-      <Projects />
-
       <div className="h-px bg-neutral-800 max-w-5xl mx-auto" />
       <Benefits />
 
       <div className="h-px bg-neutral-800 max-w-5xl mx-auto" />
       <Process />
-
+      
       <div className="h-px bg-neutral-800 max-w-5xl mx-auto" />
       <Offer />
+      
+      {/* ✅ Lazy sections (load after) */}
+      <div className="h-px bg-neutral-800 max-w-5xl mx-auto" />
+      <Projects />
 
       <div className="h-px bg-neutral-800 max-w-5xl mx-auto" />
       <Contact />

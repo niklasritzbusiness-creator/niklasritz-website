@@ -26,7 +26,7 @@ export default function Hero() {
           priority
           fetchPriority="high"
           sizes="100vw"
-          className="object-cover object-center grayscale"
+          className="object-cover object-[70%_center] grayscale"
         />
       </div>
 

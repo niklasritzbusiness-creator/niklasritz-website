@@ -89,29 +89,27 @@ export default function Projects() {
 
                 <div className="mt-10">
                   <a
-                    href="mailto:kontakt@niklasritz.de?subject=Anfrage%20zu%20einem%20ähnlichen%20Website-Konzept&body=Hallo%20Niklas,%0A%0Aich%20habe%20dein%20Konzeptprojekt%20gesehen%20und%20interessiere%20mich%20für%20eine%20ähnliche%20Website.%0A%0A---%0A%0ABranche:%20%0AZiel%20der%20Website:%20%0AAktuelle%20Website:%20%0A%0A---%0A%0AViele%20Grüße"
+                    href="/demo/maison-noir"
                     className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
                   >
-                    Ähnliches Projekt anfragen
+                    Demo ansehen
                   </a>
                 </div>
               </div>
 
               {/* Visual side */}
-              <div className="relative min-h-[380px] overflow-hidden border-t border-neutral-800 lg:min-h-[660px] lg:border-l lg:border-t-0">
-                <Image
-                  src="/projects/maison-noir-preview.webp"
-                  alt="Cinematische Website Vorschau eines Restaurant-Konzepts"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 55vw"
-                  className="object-cover object-top"
-                />
+              <div className="relative flex items-center justify-center overflow-hidden border-t border-neutral-800 bg-neutral-950 p-4 lg:border-l lg:border-t-0 lg:p-6">
+                <div className="relative w-full overflow-hidden rounded-[1.5rem] border border-neutral-800 bg-neutral-950 aspect-[1800/1016]">
+                  <Image
+                    src="/projects/maison-noir-preview.webp"
+                    alt="Maison Noir Website Vorschau"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 55vw"
+                    className="object-contain object-center"
+                  />
+                </div>
 
-                {/* cinematic overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-transparent to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/50 via-transparent to-transparent lg:from-neutral-950/70" />
-
-                {/* floating label */}
+                {/* Floating label */}
                 <div className="absolute bottom-6 left-6 rounded-full border border-white/10 bg-black/40 px-4 py-2 text-sm text-white backdrop-blur-md">
                   Konzeptprojekt · Webdesign & Nutzerführung
                 </div>
@@ -140,9 +138,7 @@ export default function Projects() {
           {exampleProjects.map((project, index) => (
             <FadeIn
               key={project.title}
-              direction={
-                index === 0 ? "left" : index === 1 ? "up" : "right"
-              }
+              direction={index === 0 ? "left" : index === 1 ? "up" : "right"}
             >
               <div className="group min-h-[260px] rounded-[2rem] border border-neutral-800 bg-neutral-900 p-8 transition duration-300 hover:-translate-y-1 hover:border-neutral-600 hover:shadow-[0_0_35px_rgba(255,255,255,0.05)]">
                 <div className="mb-12 flex items-center justify-between">

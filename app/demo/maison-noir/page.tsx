@@ -9,57 +9,56 @@ export default function MaisonNoirDemo() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#080706] text-white">
       {/* Navigation */}
-      <header className="absolute left-0 top-0 z-20 w-full">
+      <header className="absolute left-0 top-0 z-30 w-full">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-8">
           <div className="text-sm uppercase tracking-[0.35em] text-white/80">
             Maison Noir
           </div>
 
           <nav className="hidden gap-8 text-sm text-white/60 md:flex">
-            <a href="#menu" className="transition hover:text-white">
+            <a href="#menu" className="hover:text-white transition">
               Menü
             </a>
-            <a href="#experience" className="transition hover:text-white">
+            <a href="#experience" className="hover:text-white transition">
               Erlebnis
             </a>
-            <a href="#reservation" className="transition hover:text-white">
+            <a href="#reservation" className="hover:text-white transition">
               Reservieren
             </a>
           </nav>
         </div>
       </header>
 
-      {/* Hero with full background image */}
+      {/* Hero */}
       <section className="relative flex min-h-screen items-center overflow-hidden px-6 py-32">
-        {/* Background image */}
-        <div className="absolute inset-0 -z-10 overflow-hidden">
+        {/* Background layer */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="maison-hero-image absolute inset-0">
             <Image
               src="/demo/maison-noir-table.webp"
-              alt="Fein gedeckter Tisch im Restaurant"
+              alt="Fein gedeckter Tisch im Maison Noir Restaurant"
               fill
               priority
-              fetchPriority="high"
               sizes="100vw"
               className="object-cover object-center"
             />
           </div>
 
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/55" />
+          {/* Dark overlay - erstmal etwas heller */}
+          <div className="absolute inset-0 bg-black/35" />
 
           {/* Left readability gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#080706] via-[#080706]/78 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#080706]/95 via-[#080706]/65 to-transparent" />
 
           {/* Bottom cinematic fade */}
           <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-[#080706] via-[#080706]/70 to-transparent" />
 
-          {/* Warm premium glow */}
+          {/* Warm glow */}
           <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#c9a46a]/15 blur-[150px]" />
         </div>
 
+        {/* Content layer */}
         <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-12 md:grid-cols-[1.05fr_0.95fr]">
-          {/* Left content */}
           <div>
             <p className="mb-6 text-sm uppercase tracking-[0.3em] text-[#c9a46a]">
               Fine Dining · Karlsruhe
@@ -84,21 +83,20 @@ export default function MaisonNoirDemo() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#reservation"
-                className="rounded-full bg-white px-7 py-3 text-sm font-medium text-[#080706] transition hover:bg-white/85"
+                className="rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
               >
                 Tisch reservieren
               </a>
 
               <a
                 href="#menu"
-                className="rounded-full border border-white/20 px-7 py-3 text-sm font-medium text-white transition hover:border-white/50 hover:bg-white/10"
+                className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
               >
                 Menü entdecken
               </a>
             </div>
           </div>
 
-          {/* Right floating atmosphere card */}
           <div className="hidden md:flex md:justify-end">
             <div className="max-w-sm rounded-[2rem] border border-white/10 bg-black/35 p-6 shadow-2xl shadow-black/40 backdrop-blur-md">
               <p className="text-sm uppercase tracking-[0.25em] text-white/40">
@@ -154,10 +152,7 @@ export default function MaisonNoirDemo() {
       </section>
 
       {/* Experience section */}
-      <section
-        id="experience"
-        className="mx-auto max-w-7xl px-6 pb-24"
-      >
+      <section id="experience" className="mx-auto max-w-7xl px-6 pb-24">
         <div className="grid gap-6 md:grid-cols-[0.9fr_1.1fr] md:items-center">
           <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 backdrop-blur-md md:p-10">
             <p className="mb-5 text-sm uppercase tracking-[0.25em] text-[#c9a46a]">
@@ -181,10 +176,7 @@ export default function MaisonNoirDemo() {
       </section>
 
       {/* Reservation section */}
-      <section
-        id="reservation"
-        className="mx-auto max-w-7xl px-6 pb-28"
-      >
+      <section id="reservation" className="mx-auto max-w-7xl px-6 pb-28">
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 text-center backdrop-blur-md md:p-12">
           <p className="mb-5 text-sm uppercase tracking-[0.25em] text-[#c9a46a]">
             Reservierung
@@ -200,10 +192,10 @@ export default function MaisonNoirDemo() {
           </p>
 
           <a
-            href="mailto:kontakt@niklasritz.de?subject=Anfrage%20Maison%20Noir%20Konzept"
-            className="mt-8 inline-flex rounded-full bg-white px-7 py-3 text-sm font-medium text-[#080706] transition hover:bg-white/85"
+            href="#"
+            className="mt-8 inline-block rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
           >
-            Ähnliches Projekt anfragen
+            Reservierung anfragen
           </a>
         </div>
       </section>

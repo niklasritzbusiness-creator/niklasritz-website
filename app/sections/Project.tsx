@@ -4,15 +4,15 @@ import FadeIn from "../components/FadeIn"
 const exampleProjects = [
   {
     title: "Restaurant Website",
-    text: "Ein modernes Konzept für Restaurants, das Atmosphäre, Speisekarte und Reservierung klar in den Vordergrund stellt.",
+    text: "Ein hochwertiges Konzept für Restaurants, das Atmosphäre, Vertrauen und Reservierungen elegant verbindet.",
   },
   {
     title: "Fitness Studio Landingpage",
-    text: "Eine starke Landingpage mit klarem Fokus auf Probetraining, Vertrauen und schnelle Kontaktaufnahme.",
+    text: "Eine starke Landingpage mit Fokus auf Probetraining, Motivation und schnelle Kontaktaufnahme.",
   },
   {
     title: "Handwerksbetrieb Website",
-    text: "Eine seriöse Website, die Leistungen verständlich zeigt und Kunden direkt zur Anfrage führt.",
+    text: "Eine seriöse Website, die Leistungen klar erklärt und Kunden direkt zur Anfrage führt.",
   },
 ]
 
@@ -33,89 +33,87 @@ export default function Projects() {
         <FadeIn>
           <div className="mx-auto mb-20 max-w-4xl text-center">
             <p className="mb-5 text-sm uppercase tracking-[0.25em] text-neutral-500">
-              Projekte & Referenzen
+              Projekte & Konzepte
             </p>
 
             <h2 className="text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
-              Websites, die nicht nur gut aussehen — sondern Wirkung zeigen.
+              So kann eine Website wirken, wenn Design und Strategie zusammenkommen.
             </h2>
 
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-neutral-400">
-              Ein gutes Projekt beginnt nicht mit Design allein, sondern mit der
-              Frage: Wie soll sich ein Kunde fühlen, wenn er dein Unternehmen
-              online entdeckt?
+              Gute Websites entstehen nicht aus Vorlagen. Sie erzählen eine
+              Geschichte, schaffen Vertrauen und führen Besucher gezielt zur
+              nächsten Aktion.
             </p>
           </div>
         </FadeIn>
 
-        {/* Featured case study */}
+        {/* Featured concept project */}
         <FadeIn>
           <article className="relative overflow-hidden rounded-[2rem] border border-neutral-800 bg-neutral-900 shadow-2xl shadow-black/40">
-            <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="grid gap-0 lg:grid-cols-[0.85fr_1.15fr]">
               {/* Text side */}
               <div className="relative z-10 flex flex-col justify-between p-8 md:p-10 lg:p-12">
                 <div>
                   <p className="mb-5 text-sm uppercase tracking-[0.25em] text-neutral-500">
-                    Kundenprojekt
+                    Konzeptprojekt
                   </p>
 
                   <h3 className="text-3xl font-semibold leading-tight tracking-tight text-white md:text-5xl">
-                    Die Tauchwelt — Tauchschule in Eggenstein
+                    Maison Noir — Restaurant Website
                   </h3>
 
                   <p className="mt-7 max-w-xl text-lg leading-relaxed text-neutral-400">
-                    Für die Tauchschule entstand eine moderne, schnelle Website,
-                    die Vertrauen schafft, klar strukturiert ist und neue Kunden
-                    gezielt zur Kontaktaufnahme führt.
+                    Ein fiktives Website-Konzept für ein modernes Restaurant.
+                    Der Fokus liegt auf hochwertiger Atmosphäre, klarer
+                    Nutzerführung und einem starken ersten Eindruck.
                   </p>
 
                   <div className="mt-10 grid gap-4 text-sm text-neutral-400 sm:grid-cols-3">
                     <div className="rounded-2xl border border-neutral-800 bg-neutral-950/60 p-4">
-                      <p className="mb-2 text-neutral-500">Fokus</p>
-                      <p className="text-white">Vertrauen</p>
-                    </div>
-
-                    <div className="rounded-2xl border border-neutral-800 bg-neutral-950/60 p-4">
-                      <p className="mb-2 text-neutral-500">Optimiert</p>
-                      <p className="text-white">Mobil</p>
+                      <p className="mb-2 text-neutral-500">Stil</p>
+                      <p className="text-white">Elegant</p>
                     </div>
 
                     <div className="rounded-2xl border border-neutral-800 bg-neutral-950/60 p-4">
                       <p className="mb-2 text-neutral-500">Ziel</p>
-                      <p className="text-white">Anfragen</p>
+                      <p className="text-white">Reservierungen</p>
+                    </div>
+
+                    <div className="rounded-2xl border border-neutral-800 bg-neutral-950/60 p-4">
+                      <p className="mb-2 text-neutral-500">Fokus</p>
+                      <p className="text-white">Vertrauen</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-10">
                   <a
-                    href="https://www.die-tauchwelt.de"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="mailto:kontakt@niklasritz.de?subject=Anfrage%20zu%20einem%20ähnlichen%20Website-Konzept&body=Hallo%20Niklas,%0A%0Aich%20habe%20dein%20Konzeptprojekt%20gesehen%20und%20interessiere%20mich%20für%20eine%20ähnliche%20Website.%0A%0A---%0A%0ABranche:%20%0AZiel%20der%20Website:%20%0AAktuelle%20Website:%20%0A%0A---%0A%0AViele%20Grüße"
                     className="inline-flex rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-200"
                   >
-                    Website ansehen
+                    Ähnliches Projekt anfragen
                   </a>
                 </div>
               </div>
 
               {/* Visual side */}
-              <div className="relative min-h-[360px] overflow-hidden border-t border-neutral-800 lg:min-h-[620px] lg:border-l lg:border-t-0">
+              <div className="relative min-h-[380px] overflow-hidden border-t border-neutral-800 lg:min-h-[660px] lg:border-l lg:border-t-0">
                 <Image
-                  src="/projects/screenshot_die-tauchwelt.de.webp"
-                  alt="Website Vorschau Die Tauchwelt"
+                  src="/projects/maison-noir-preview.webp"
+                  alt="Cinematische Website Vorschau eines Restaurant-Konzepts"
                   fill
                   sizes="(max-width: 1024px) 100vw, 55vw"
                   className="object-cover object-top"
                 />
 
                 {/* cinematic overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-transparent to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/50 via-transparent to-transparent lg:from-neutral-950/70" />
 
                 {/* floating label */}
                 <div className="absolute bottom-6 left-6 rounded-full border border-white/10 bg-black/40 px-4 py-2 text-sm text-white backdrop-blur-md">
-                  Live Projekt · Webdesign & Umsetzung
+                  Konzeptprojekt · Webdesign & Nutzerführung
                 </div>
               </div>
             </div>
@@ -126,13 +124,13 @@ export default function Projects() {
         <FadeIn>
           <div className="mx-auto my-20 max-w-3xl text-center">
             <h3 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
-              Jede Branche braucht eine andere Geschichte.
+              Jede Branche braucht eine eigene visuelle Sprache.
             </h3>
 
             <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-neutral-400">
-              Deshalb wirkt gutes Webdesign nicht wie eine Vorlage. Es passt zu
-              deinem Unternehmen, deiner Zielgruppe und dem Gefühl, das du
-              vermitteln möchtest.
+              Deshalb sollte eine Website nicht einfach nur modern aussehen,
+              sondern genau das Gefühl vermitteln, das Kunden mit deinem
+              Unternehmen verbinden sollen.
             </p>
           </div>
         </FadeIn>
